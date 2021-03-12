@@ -1,0 +1,26 @@
+# Below is the list of commands used for the Ubuntu 20.04 LTS Server build and patching:
+
+sudo apt list --upgradeable
+# Lists all programs that have an upgrade available
+
+sudo apt-get upgrade
+# Installs all patches and upgrades that are available for installed programs
+
+sudo docker version
+# Shows installed Docker Client and Server versions
+
+sudo docker volume create grafana-storage
+# Creates a dedicated volume that can be used as persistent container storage
+
+sudo find / -type d -name "grafana-storage"
+# Lists the full path to the persistent volume
+
+sudo docker search grafana
+# Searches the Docker Hub and defined repositories for images containing the name "grafana"
+
+sudo docker pull grafana
+# Downloads the latest grafana image for use
+
+sudo docker images
+# Lists all local images
+
